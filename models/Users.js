@@ -22,7 +22,7 @@ User.init(
             unique: true,
         },
         password: {
-            type: DataTypes.VARCHAR(30),
+            type: DataTypes.STRING,
             allowNull: false,
             validate: {
                 len: [8]
@@ -37,7 +37,6 @@ User.init(
             },
         },
         sequelize,
-        timestamps: false,
         freezeTableName: true,
         underscored: true,
         modelName: "user",

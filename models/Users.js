@@ -22,7 +22,7 @@ User.init(
             unique: true,
         },
         password: {
-            type: DataTypes.VARCHAR,
+            type: DataTypes.VARCHAR(30),
             allowNull: false,
             validate: {
                 len: [8]

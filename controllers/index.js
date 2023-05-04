@@ -2,6 +2,8 @@ const router = require("express").Router();
 
 // This is where we handle HomeRoutes (handlebars are handled by the HomeRoutes)
 
-router.use("/api", require("./api/ApiRoutes"));
+router.use("/user", require("./api/UserRoutes"));
+
+router.use("/", require("./HomeRoutes"));
 
 module.exports = router;

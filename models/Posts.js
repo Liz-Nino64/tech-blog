@@ -23,7 +23,7 @@ Post.init(
             allowNull: false
         },
         body: {
-            type: DataTypes.VARCHAR,
+            type: DataTypes.STRING,
             allowNull: false,
         },
     },
